@@ -49,7 +49,7 @@ function generatePassword () {
     
   
   //  console.log("does this work", upperCase);
-    //numeric
+    
 
   askNumeric = window.confirm("Do you want numbers included? ");
   
