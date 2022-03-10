@@ -36,7 +36,8 @@ THEN the password is written to the page
 
 The following image shows the web application's appearance and functionality:
 
-![The Password Generator application displays a red button to "Generate Password".](./Assets/images/password-generator-demo.png)
+![The Password Generator application displays a red button to "Generate Password".](./Assets/images/password-generator.png) 
+![Mobile View](./Assets/images/password-generator-mobile-view.png)
 
 
 ## Deployed Website 
