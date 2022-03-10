@@ -30,6 +30,10 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
+h1 {
+  font-size: 2em;
+}
+
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -48,6 +52,10 @@ header {
   width: 100%;
   background: #e7e9eb;
   height: 2px;
+}
+
+h2 {
+  font-size: 1.75em;
 }
 
 .card-body {
@@ -127,6 +135,10 @@ button[disabled] {
 
   #password {
     font-size: 1rem;
+  }
+
+  h2 {
+    display: none;
   }
 }
 

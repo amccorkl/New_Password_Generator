@@ -1,8 +1,8 @@
-# 03 JavaScript: Password Generator
+# 03 JavaScript: New Password Generator
 
 ## Description
 
-This application enables employees to generate random passwords based on four criteria that they’ve selected. The app will run in the browser and feature dynamically updated HTML and CSS powered by JavaScript code. It has a responsive user interface that adapts to multiple screen sizes.
+This application enables employees to generate random passwords based on four criteria that they’ve selected through the alert, confirm and prompt windows. The app will run in the browser and feature dynamically updated HTML and CSS powered by JavaScript code. It has a responsive user interface that adapts to multiple screen sizes.
 
 ## User Story
 
@@ -36,7 +36,7 @@ THEN the password is written to the page
 
 The following image shows the web application's appearance and functionality:
 
-![The Password Generator application displays a red button to "Generate Password".](./Assets/images/03-javascript-demo.png)
+![The Password Generator application displays a red button to "Generate Password".](./Assets/images/password-generator-demo.png)
 
 
 ## Deployed Website 
@@ -44,17 +44,6 @@ The following image shows the web application's appearance and functionality:
 [Password Generator](https://amccorkl.github.io/New_Password_Generator/)
 
 
-
-
-
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
 
 
 
