@@ -3,12 +3,13 @@ var generateBtn = document.querySelector("#generate");
 
 
 //define variables
-var lowerCaseArr = "abcdefghijklmnopqrstuvwxyz".split("");
-var upperCaseArr = "ABCDEFGHIJKLMNOPEQRSTUVWXYZ".split("");
-var specialCharArr = "!@#$%^&*()_+=-{}][|:;?/>.<".split("");
-var numbersArr = "1234567890".split("");
+var lowerCase = "abcdefghijklmnopqrstuvwxyz".split("");
+var upperCase = "ABCDEFGHIJKLMNOPEQRSTUVWXYZ".split("");
+var specialChar = "!@#$%^&*()_+=-{}][|:;?/>.<".split("");
+var numbers = "1234567890".split("");
 var allCharacters = [];
 var returnPassword = [];
+// var returnPassword = ""; use this for keeping the password a string, see connecting code below
 
 function generatePassword() {
   //length condition first
@@ -26,35 +27,37 @@ function generatePassword() {
     return; //undefined returned when user enters nothing
   }
 
-  //loop asks user to confirm choices  ????? doesn't work, user can still click cancel and it progresses
+  alert("You must choose at least one of the following criteria that appear in separate windows. Your choice of password criteria are \n--lower case letters \n--upper case letters \n--numbers \n--and special characters");
+
   var askLowerCase = confirm(
-    "Click ok to confirm using lower case letters in your password. 'Generator' will not work if you don't click ok."
+    "Click ok to confirm using lower case letters in your password."
   );
 
   if (askLowerCase) {
-    allCharacters = allCharacters.concat(lowerCaseArr);
+    allCharacters = allCharacters.concat(lowerCase);
   }
 
   var askUpperCase = confirm(
-    "Click ok to confirm using upper case letters in your password"
+    "Click ok to confirm using upper case letters in your password."
   );
   if (askUpperCase) {
-    allCharacters = allCharacters.concat(upperCaseArr);
+    allCharacters = allCharacters.concat(upperCase);
     
   }
   var askNumbers = confirm(
-    "Click ok to confirm using numbers in your password"
+    "Click ok to confirm using numbers in your password."
   );
   if (askNumbers) {
-    allCharacters = allCharacters.concat(numbersArr);
-    
+    allCharacters = allCharacters.concat(numbers);
+      console.log(askNumbers);
+
   }
 
   var askSpecialChar = confirm(
-    "Click ok to confirm using special characters in your password"
+    "Click ok to confirm using special characters in your password."
   );
   if (askSpecialChar) {
-    allCharacters = allCharacters.concat(specialCharArr);
+    allCharacters = allCharacters.concat(specialChar);
   }
   //console.log(allCharacters);
   
@@ -64,15 +67,18 @@ function generatePassword() {
 
   //console.log(allCharacters);
 
-  // run the loop that pulls all required letters, numbers, symbols until the length is reached
+  // run the loop that pulls all required letters, numbers, symbols until the length is reached and push into the returnPassword array
   for (var i = 0; i < passwordLength; i++) {
     var index= Math.floor(Math.random() * allCharacters.length)
     var oneCharacter = allCharacters[index]
     returnPassword.push(oneCharacter)
-  }
-  //console.log(`For return password: ${returnPassword}`);
+    // returnPassword += oneCharacter; use this for keeping the password just a string
+    // console.log(returnPassword);
 
+  }
+  //join combines all the one characters pushed into the return password array
   return returnPassword.join("");
+  // return returnPassword; use this for keeping the password as jsut a string
 }
 
 // Write the text into the textarea

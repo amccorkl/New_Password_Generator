@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./Assets/css/reset.css">
+    <link rel="stylesheet" href="./Assets/css/style.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -15,17 +15,17 @@
       </header>
 
       <main class="card">
-        <div class="card-header">
+        <section class="card-header">
           <h2>Generate a Password</h2>
-        </div>
-        <div class="card-body">
+        </section>
+        <section class="card-body">
           <textarea
             readonly
             id="password"
             placeholder="Start by clicking on the Generate Password button"
-            aria-label="Generated Password"
+            aria-label="Generate Password"
           ></textarea>
-        </div>
+        </section>
 
         <section class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
@@ -33,6 +33,6 @@
       </main>
 
     </div>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
